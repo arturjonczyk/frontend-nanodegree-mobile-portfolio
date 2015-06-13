@@ -9,14 +9,14 @@ module.exports = function (grunt) {
                     engine: 'im',
                     sizes: [{
                         name: 'small',
-                        width: '116px',
-                        quality: 30,
+                        width: '70px',
+                        quality: 50,
                     }]
                 },
                 files: [{
                     expand: true,
-                    src: ['*.jpg'],
-                    cwd: 'views/images/',
+                    src: ['profilepicaj.jpg'],
+                    cwd: 'img/',
                     dest: 'img/'
                 }]
             }
