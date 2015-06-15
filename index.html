@@ -75,7 +75,8 @@
       if (raf) raf(cb);
       else window.addEventListener('load', cb);
     </script>
-    <script src="js/perfmatters.js"></script>
+    <script>window.addEventListener("load",function(){var a=window.performance.timing;document.getElementById("crp-stats").textContent="DCL: "+(a.domContentLoadedEventStart-a.domLoading)+"ms, onload: "+(a.domComplete-a.domLoading)+"ms"});
+</script>
     <script src="http://www.google-analytics.com/analytics.js"></script>
   </body>
 </html>
