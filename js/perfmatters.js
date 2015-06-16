@@ -1,0 +1,1 @@
+window.addEventListener("load",function(){var a=window.performance.timing;document.getElementById("crp-stats").textContent="DCL: "+(a.domContentLoadedEventStart-a.domLoading)+"ms, onload: "+(a.domComplete-a.domLoading)+"ms"});
